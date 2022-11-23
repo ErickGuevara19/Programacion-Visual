@@ -35,7 +35,7 @@ class Docente extends Persona{
         super.imprimir();
         console.log("Seguro :"+ this.numeroSeguro);
         console.log("Su titulo es de :"+this.titulo);
-        let numeroHorasextra = 20;
+        let numeroHorasextra = 30;
         let sueldoHorasExtras = 0;
         let salariofinal=0;
         let salario=500;
