@@ -3,8 +3,6 @@ class Student {
   private semester: number = 6;
   private course: string = "Fisica";
   private juegoFav:string="PES"
-  
-  // getters
   public get courses() {
     return this.course;
   }
@@ -18,9 +16,6 @@ class Student {
   }
   public get juegoFavs(){
     return this.juegoFav;}
-    
-  
-  // setters
   public set courses(thecourse: string) {
     this.course = thecourse;
   }
@@ -36,37 +31,30 @@ class Student {
   
 }
 
-// instanciar objetos
 let student = new Student();
 
-// uso de setters
 student.courses = "Desarrollo de software";
 student.names = "Erick Guevara";
 student.semesters = 3;
 student.juegoFavs="League of legends";
 
-
-// uso de getters
 console.log("Nombre: " + student.names);
 console.log("Curso: " + student.courses);
 console.log("Semestre: " + student.semesters);
 console.log("Juego Favorito: " + student.juegoFavs);
 
-// hacer superclase figura geometrica
+// Deber
 class FiguraGeometrica {
   protected superficie: number = 60;
   protected tipo: string = "Pentágono";
 
-  // getters
+
   public get superficies() {
     return this.superficie;
   }
-
   public get tipos() {
     return this.tipo;
   }
-
-  // setters
   public set superficies(superficie: number) {
     this.superficie = superficie;
   }
@@ -80,19 +68,15 @@ class Circulos extends FiguraGeometrica {
   protected tipo = "Ovalo";
   private radio: number = 1.70;
 
-  // getters
   public get superficies() {
     return this.superficie;
   }
   public get radios() {
     return this.radio;
   }
-
   public get tipos() {
     return this.tipo;
   }
-
-    // setters
   public set superficies(superficie: number) {
     this.superficie = superficie;
   }
@@ -110,7 +94,6 @@ class Triangulos extends FiguraGeometrica {
   private base: number = 10;
   private altura: number = 25;
 
-    // getters
   public get superficies() {
     return this.superficie;
   }
@@ -120,12 +103,9 @@ class Triangulos extends FiguraGeometrica {
   public get alturas() {
     return this.altura;
   }
-
   public get tipos() {
     return this.tipo;
   }
-
-    // setters
   public set superficies(superficie: number) {
     this.superficie = superficie;
   }
@@ -139,25 +119,19 @@ class Triangulos extends FiguraGeometrica {
     this.tipo = tipo;
   }
 }
-
 class Rectangulos extends FiguraGeometrica {
   protected superficie = 89.5;
   protected tipo = "Figura desconocida";
   private lado: number = 40;
-
-    // getters
   public get superficies() {
     return this.superficie;
   }
   public get lados() {
     return this.lado;
   }
-
   public get tipos() {
     return this.tipo;
   }
-
-    // setters
   public set superficies(superficie: number) {
     this.superficie = superficie;
   }
@@ -170,7 +144,7 @@ class Rectangulos extends FiguraGeometrica {
   }
 }
 
-// instanciacion de objetos
+
 let rectangulo = new Rectangulos();
 rectangulo.tipos = "Rectangulo";
 rectangulo.lados = 4;
